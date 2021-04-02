@@ -1,0 +1,11 @@
+version: "3.8"
+ 
+services:
+    database:
+        image: postgres:13-alpine
+        container_name: postgres_docker
+        environment:
+            POSTGRES_USER: main
+            POSTGRES_PASSWORD: main
+            POSTGRES_DB: main
+        ports: [5432]
