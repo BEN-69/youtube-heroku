@@ -15,6 +15,10 @@ class YoutubeController extends AbstractController
 {
     /**
      * @Route("/", name="app_home")
+     * @param Request $request
+     * @param EntityManagerInterface $em
+     * @param YoutubeRepository $youtubeRepository
+     * @return Response
      */
     public function index(Request $request, EntityManagerInterface $em, YoutubeRepository $youtubeRepository): Response
     {
